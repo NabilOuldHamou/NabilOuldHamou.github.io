@@ -20,12 +20,6 @@ body
     background: #333333;
 }
 
-.content a
-{
-    color: rgb(33, 33, 185);
-    text-decoration: none;
-}
-
 /* windows */
 .hidden
 {
@@ -44,9 +38,50 @@ body
     text-decoration: none;
 }
 
+.content a.highlight
+{
+    color: #00aa00;
+}
+
+.content ul
+{
+    list-style: none;
+}
+
+.content ul li
+{
+    padding-bottom: 10px;
+}
+
+.wb-title {
+    font-size: 15px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.wb-min,
+.wb-max,
+.wb-full {
+    display: none;
+}
+
 .wb-body
 {
     background: #0d1117;
+}
+
+.wb-body::-webkit-scrollbar
+{
+    width: 0.25rem;
+}
+
+.wb-body::-webkit-scrollbar-track
+{
+    background: #1e1e24;
+}
+
+.wb-body::-webkit-scrollbar-thumb
+{
+    background: #005200;
 }
 
 /* Main page */
@@ -152,7 +187,7 @@ body
     text-decoration: underline;
 }
 
-#terminal_results .highlight
+.highlight
 {
     color: #00aa00;
 }

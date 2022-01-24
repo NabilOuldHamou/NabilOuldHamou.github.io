@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
                   top: 50,
                   left: 50,
                   mount: contact,
-                  background: "#ff005d",
                   onfocus: function () {
                     this.setBackground('#00aa00')
                   },
@@ -79,6 +78,22 @@ document.addEventListener('DOMContentLoaded', function() {
             case "portfolio":
                 clearInput();
                 addTextToResults("Opening the portfolio page...");
+
+                const portfolioWindow = new WinBox({
+                  title: 'Portfolio',
+                  width: '300px',
+                  height: '300px',
+                  top: 90,
+                  left: 80,
+                  mount: portfolio,
+                  onfocus: function () {
+                    this.setBackground('#00aa00')
+                  },
+                  onblur: function () {
+                    this.setBackground('#777')
+                  },
+                })
+
                 break;  
 
             case "help":
