@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+html 
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+  
+*, 
+*:before, 
+*:after 
+{
+    box-sizing: inherit;
+}
+   
+body
+{
+    font-family: 'Roboto Mono', sans-serif;
+    background: #333333;
+}
+
+.content a
+{
+    color: rgb(33, 33, 185);
+    text-decoration: none;
+}
+
+/* windows */
+.hidden
+{
+    display: none;
+}
+
+.content
+{
+    color: white;
+    padding-left: 20px;
+}
+
+.content a 
+{
+    color: #1c1cbd;
+    text-decoration: none;
+}
+
+.wb-body
+{
+    background: #0d1117;
+}
+
+/* Main page */
+   
+.container
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+   
+.container h1
+{
+    width: 100%;
+    letter-spacing: -5px;
+    font-size: 50px;
+    text-align: center;
+    margin: 60px 0 0 0;
+}
+
+.title
+{
+    color: #00aa00;
+}
+
+.cartet
+{
+    font-weight: 700;
+    animation: 1s blink step-end infinite;
+}
+   
+.container h3
+{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255,255,255,0.75);
+    margin: 0 0 60px 0;
+    opacity: 0;
+
+    animation: fadeInAnimation 1s ease-in-out 0.5s forwards;
+}
+   
+.terminal
+{
+    background: black;
+    width: 100%;
+    border-radius: 4px;
+    padding:12px 0 0 0;
+    margin-top: -20px;
+    font-family: 'Roboto Mono', monospace;
+    opacity: 0;
+
+    animation:
+        slideDownAnimation 1s ease-in-out 1s forwards,
+        fadeInAnimation 0.8s ease-in-out 1s forwards;
+}
+   
+.userInput
+{
+    color: rgba(255,255,255,0.5);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+   
+#terminal_results
+{
+    width:100%;
+    height: 400px;
+    padding: 12px;
+    overflow-y: auto;
+    resize: none;
+    border: none;
+    font-size: 14px;
+    line-height: 28px;
+    display: block;
+    color: rgba(255,255,255,0.9);
+}
+
+#terminal_results::-webkit-scrollbar
+{
+    width: 0.25rem;
+}
+
+#terminal_results::-webkit-scrollbar-track
+{
+    background: #1e1e24;
+}
+
+#terminal_results::-webkit-scrollbar-thumb
+{
+    background: #005200;
+}
+
+#terminal_results a
+{
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+}
+
+#terminal_results a:hover
+{
+    text-decoration: underline;
+}
+
+#terminal_results .highlight
+{
+    color: #00aa00;
+}
+
+#terminal_input
+{
+    background: black;
+    display: block;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-radius: 0 0 4px 4px;
+    width: 100%;
+    color: white;
+    padding: 18px;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+}
+   
+@-webkit-keyframes fadeInAnimation 
+{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeInAnimation 
+{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeInAnimation 
+{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInAnimation 
+{
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes slideDownAnimation 
+{
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+}
+@-moz-keyframes slideDownAnimation 
+{
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+}
+@-o-keyframes slideDownAnimation 
+{
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+}
+@keyframes slideDownAnimation 
+{
+    0%   { margin-top: -20px;}
+    100% { margin-top: 0;}
+}
+
+@keyframes blink 
+{
+    from, to { color: transparent; }
+    50% { color: #00aa00; }
+}
+
+@media screen and (max-width: 1000px){
+    .container
+    {
+        width: 100%;
+        padding: 0 12px;
+    }
+    .container h1
+    {
+        font-size: 32px;
+        margin: 40px 0 0 0;
+    }
+    .container h3
+    {
+        font-size: 16px;
+        margin: 0 0 40px 0;
+    }
+    #terminal_results
+    {
+        height: 100px;
+    }
+}
