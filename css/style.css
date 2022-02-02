@@ -34,7 +34,7 @@ body
 
 .content a 
 {
-    color: #1c1cbd;
+    color: #6c6cd6;
     text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ body
 
 .wb-body
 {
-    background: #0d1117;
+    background: #2b2e31;
 }
 
 .wb-body::-webkit-scrollbar
@@ -123,7 +123,8 @@ body
 
     animation: fadeInAnimation 1s ease-in-out 0.5s forwards;
 }
-   
+
+/* Terminal */
 .terminal
 {
     background: black;
@@ -163,7 +164,7 @@ body
 
 #terminal_results::-webkit-scrollbar
 {
-    width: 0.25rem;
+    width: 0.4rem;
 }
 
 #terminal_results::-webkit-scrollbar-track
@@ -174,6 +175,11 @@ body
 #terminal_results::-webkit-scrollbar-thumb
 {
     background: #005200;
+}
+
+#terminal_results::-webkit-scrollbar-thumb:hover
+{
+    background: #007000;
 }
 
 #terminal_results a
@@ -276,6 +282,6 @@ body
     }
     #terminal_results
     {
-        height: 100px;
+        height: 350px;
     }
 }

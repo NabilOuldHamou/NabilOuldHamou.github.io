@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         switch(textInputValueLowerCase){
             case "about":
                 clearInput();
-                addTextToResults("Hello, my name is <span class=\"highlight\">Nabil Ould Hamou</span>. I am a french computer science student, I always had an interested in programming and computers, that lead me to pursuing a career in the computer science field. I am mostly working as a software programmer.");
+                addTextToResults("Hello, my name is <span class=\"highlight\">Nabil Ould Hamou</span>. I am a french computer science student, I always had an interested in programming and computers, that lead me to pursuing a career in the computer science field.");
                 break;
 
             case "contact":
